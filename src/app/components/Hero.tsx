@@ -124,9 +124,9 @@ export function Hero({ heroImage }: HeroProps) {
               className="grid grid-cols-3 gap-6 pt-8"
             >
               {[
-                { value: '50+', label: 'Projects', delay: 2.5 },
-                { value: '5+', label: 'Years Exp', delay: 2.6 },
-                { value: '30+', label: 'Happy Clients', delay: 2.7 },
+                { value: '20+', label: 'Projects', delay: 2.5 },
+                { value: '1+', label: 'Years Exp', delay: 2.6 },
+                { value: '5+', label: 'Happy Clients', delay: 2.7 },
               ].map((stat) => (
                 <motion.div
                   key={stat.label}
