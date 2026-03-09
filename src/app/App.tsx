@@ -10,8 +10,8 @@ import { Footer } from './components/Footer';
 
 function App() {
   // Images from Unsplash
-  const heroImage = 'https://images.unsplash.com/photo-1761652661873-a08d8cb25b66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmdXR1cmlzdGljJTIwdGVjaG5vbG9neSUyMGFic3RyYWN0JTIwYmx1ZXxlbnwxfHx8fDE3NzI5MTQ4NjF8MA&ixlib=rb-4.1.0&q=80&w=1080';
-  const aboutImage = 'https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzb2Z0d2FyZSUyMGRldmVsb3BlciUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NzI5MDc4OTl8MA&ixlib=rb-4.1.0&q=80&w=1080';
+  const heroImage = 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1080&q=80'; // Coding on laptop
+  const aboutImage = '/Chiki-tella.JPG';
   const projectImages = [
     'https://images.unsplash.com/photo-1717996563514-e3519f9ef9f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbiUyMGludGVyZmFjZXxlbnwxfHx8fDE3NzI4NTc5MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
     'https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhaSUyMHJvYm90aWNzJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NzI5NTMwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080',

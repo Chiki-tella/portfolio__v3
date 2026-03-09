@@ -25,7 +25,7 @@ export function TerminalEffect() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1.5 }}
-      className="absolute bottom-8 left-4 md:left-8 z-20 max-w-md hidden lg:block"
+      className="absolute bottom-8 right-4 md:right-8 z-20 max-w-md hidden lg:block"
     >
       <div className="bg-black/60 backdrop-blur-md border border-cyan-500/30 rounded-lg p-4 font-mono">
         <div className="flex items-center gap-2 mb-3 pb-2 border-b border-cyan-500/20">
