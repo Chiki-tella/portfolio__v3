@@ -203,10 +203,44 @@ html {
   background: linear-gradient(to bottom, #0891b2, #1d4ed8);
 }
 
+/* Custom scrollbar for modal */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #06b6d4, #2563eb);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #0891b2, #1d4ed8);
+}
+
 /* Selection Color */
 ::selection {
   background-color: rgba(6, 182, 212, 0.3);
   color: #ffffff;
+}
+
+/* Dark Reader Compatibility - Force text visibility */
+[style*="color: rgb(255, 255, 255)"],
+[style*="color: rgb(34, 211, 238)"],
+[style*="color: rgb(156, 163, 175)"],
+[style*="color: rgb(209, 213, 219)"] {
+  opacity: 1 !important;
+}
+
+/* Ensure text remains visible with dark reader */
+.text-white,
+.text-gray-300,
+.text-gray-400,
+.text-cyan-400 {
+  opacity: 1 !important;
 }
 
 /* Custom Animations */

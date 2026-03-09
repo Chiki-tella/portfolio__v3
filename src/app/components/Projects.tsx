@@ -1,11 +1,26 @@
 import { motion } from 'motion/react';
-import { ExternalLink, Github, Sparkles } from 'lucide-react';
+import { ExternalLink, Github, Sparkles, ChevronDown, ChevronUp } from 'lucide-react';
+import { useState } from 'react';
 
 interface ProjectsProps {
   projectImages: string[];
 }
 
 export function Projects({ projectImages }: ProjectsProps) {
+  const [expandedProjects, setExpandedProjects] = useState<Set<number>>(new Set());
+
+  const toggleProject = (index: number) => {
+    setExpandedProjects(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
+  };
+
   const projects = [
     {
       title: 'AI-Powered Analytics Dashboard',
@@ -163,13 +178,32 @@ export function Projects({ projectImages }: ProjectsProps) {
 
                 {/* Content */}
                 <div className="p-6 relative">
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center gap-2">
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors flex items-center gap-2" style={{ color: 'rgb(255, 255, 255)' }}>
                     <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
                     {project.title}
                   </h3>
-                  <p className="text-sm text-gray-400 mb-4 line-clamp-2">
+                  <p className={`text-sm text-gray-400 mb-4 ${expandedProjects.has(index) ? '' : 'line-clamp-2'}`} style={{ color: 'rgb(156, 163, 175)' }}>
                     {project.description}
                   </p>
+                  
+                  {/* Read More Button */}
+                  <button
+                    onClick={() => toggleProject(index)}
+                    className="flex items-center gap-1 text-xs text-cyan-400 hover:text-cyan-300 transition-colors mb-3 font-medium"
+                    style={{ color: 'rgb(34, 211, 238)' }}
+                  >
+                    {expandedProjects.has(index) ? (
+                      <>
+                        <span>Show Less</span>
+                        <ChevronUp className="w-3 h-3" />
+                      </>
+                    ) : (
+                      <>
+                        <span>Read More</span>
+                        <ChevronDown className="w-3 h-3" />
+                      </>
+                    )}
+                  </button>
 
                   {/* Technologies */}
                   <div className="flex flex-wrap gap-2">

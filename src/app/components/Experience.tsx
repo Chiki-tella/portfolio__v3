@@ -112,14 +112,14 @@ export function Experience() {
                           <exp.icon className="w-7 h-7 text-white" />
                         </div>
                         <div className={index % 2 === 0 ? 'lg:text-right' : ''}>
-                          <div className="text-sm font-medium text-cyan-400 mb-1">{exp.year}</div>
-                          <h3 className="text-xl font-bold text-white mb-1">{exp.title}</h3>
-                          <p className="text-sm text-gray-400">{exp.organization}</p>
+                          <div className="text-sm font-medium text-cyan-400 mb-1" style={{ color: 'rgb(34, 211, 238)' }}>{exp.year}</div>
+                          <h3 className="text-xl font-bold text-white mb-1" style={{ color: 'rgb(255, 255, 255)' }}>{exp.title}</h3>
+                          <p className="text-sm text-gray-400" style={{ color: 'rgb(156, 163, 175)' }}>{exp.organization}</p>
                         </div>
                       </div>
 
                       {/* Description */}
-                      <p className="text-gray-400 mb-4 leading-relaxed">
+                      <p className="text-gray-400 mb-4 leading-relaxed" style={{ color: 'rgb(156, 163, 175)' }}>
                         {exp.description}
                       </p>
 
@@ -133,7 +133,7 @@ export function Experience() {
                             }`}
                           >
                             <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full flex-shrink-0"></div>
-                            <span className="text-gray-300">{achievement}</span>
+                            <span className="text-gray-300" style={{ color: 'rgb(209, 213, 219)' }}>{achievement}</span>
                           </div>
                         ))}
                       </div>

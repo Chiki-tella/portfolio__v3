@@ -94,24 +94,24 @@ export function About({ aboutImage }: AboutProps) {
             transition={{ duration: 0.6 }}
             className="space-y-6 order-1 lg:order-2"
           >
-            <h3 className="text-3xl font-bold text-white">
+            <h3 className="text-3xl font-bold text-white" style={{ color: 'rgb(255, 255, 255)' }}>
               Crafting Digital Experiences Through{' '}
-              <span className="text-cyan-400">Innovation</span>
+              <span className="text-cyan-400" style={{ color: 'rgb(34, 211, 238)' }}>Innovation</span>
             </h3>
 
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed" style={{ color: 'rgb(156, 163, 175)' }}>
               I'm a passionate software developer with a deep fascination for technology and innovation. My journey in
               software development began with a curiosity about how things work, which evolved into a commitment to
               building intelligent systems that make a difference.
             </p>
 
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed" style={{ color: 'rgb(156, 163, 175)' }}>
               With expertise spanning full-stack development, artificial intelligence, and systems engineering, I thrive
               on solving complex problems and turning visionary ideas into reality. My work is driven by a constant
               pursuit of excellence and a desire to push the boundaries of what's possible with technology.
             </p>
 
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed" style={{ color: 'rgb(156, 163, 175)' }}>
               When I'm not coding, you'll find me exploring the latest advancements in AI, contributing to open-source
               projects, or experimenting with emerging technologies like robotics and IoT.
             </p>
@@ -130,8 +130,8 @@ export function About({ aboutImage }: AboutProps) {
                   <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
                     <item.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h4 className="text-white font-semibold mb-1">{item.title}</h4>
-                  <p className="text-sm text-gray-400">{item.description}</p>
+                  <h4 className="text-white font-semibold mb-1" style={{ color: 'rgb(255, 255, 255)' }}>{item.title}</h4>
+                  <p className="text-sm text-gray-400" style={{ color: 'rgb(156, 163, 175)' }}>{item.description}</p>
                 </motion.div>
               ))}
             </div>
