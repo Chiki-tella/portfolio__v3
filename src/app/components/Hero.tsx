@@ -97,16 +97,23 @@ export function Hero({ heroImage }: HeroProps) {
               transition={{ delay: 2.2 }}
               className="flex flex-wrap gap-4 pt-4"
             >
-              <button className="group px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium flex items-center gap-2 hover:shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105 relative overflow-hidden">
+              <a 
+                href="#projects"
+                className="group px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium flex items-center gap-2 hover:shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105 relative overflow-hidden"
+              >
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <span className="relative z-10">View Projects</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform relative z-10" />
-              </button>
-              <button className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-cyan-500/30 text-cyan-400 rounded-lg font-medium flex items-center gap-2 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 relative group overflow-hidden">
+              </a>
+              <a
+                href="/Munezero_Christella_CV_2.pdf"
+                download="Munezero_Christella_CV.pdf"
+                className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-cyan-500/30 text-cyan-400 rounded-lg font-medium flex items-center gap-2 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 relative group overflow-hidden"
+              >
                 <div className="absolute inset-0 bg-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <Download className="w-5 h-5 relative z-10" />
                 <span className="relative z-10">Download CV</span>
-              </button>
+              </a>
             </motion.div>
 
             {/* Stats with Enhanced Design */}
