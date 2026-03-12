@@ -101,14 +101,6 @@ export function Contact() {
 
   return (
     <section id="contact" className="py-20 lg:py-32 relative overflow-hidden">
-      {/* Toast Notifications */}
-      <Toaster 
-        position="top-center" 
-        richColors 
-        closeButton
-        theme="dark"
-      />
-      
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-slate-900 to-black">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(6,182,212,0.2),rgba(0,0,0,0))]"></div>
