@@ -85,7 +85,8 @@ export function Navigation() {
               </motion.button>
             ))}
             
-            <motion.button
+            <motion.a
+              href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="ml-4 px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium relative overflow-hidden group shadow-lg shadow-cyan-500/30"
@@ -110,7 +111,7 @@ export function Navigation() {
                   ease: 'linear',
                 }}
               />
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -146,18 +147,20 @@ export function Navigation() {
                 <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-cyan-400 group-hover:h-full transition-all duration-300 rounded-r"></div>
               </motion.button>
             ))}
-            <motion.button 
+            <motion.a
+              href="#contact"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: navLinks.length * 0.05 }}
-              className="w-full px-4 py-3 mt-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium shadow-lg shadow-cyan-500/30 relative overflow-hidden group"
+              onClick={() => setIsOpen(false)}
+              className="w-full px-4 py-3 mt-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium shadow-lg shadow-cyan-500/30 relative overflow-hidden group block"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
                 <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
                 Hire Me
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
       )}
