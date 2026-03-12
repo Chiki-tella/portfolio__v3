@@ -12,6 +12,7 @@ A modern, futuristic portfolio website showcasing my work as a Software Develope
 - **🎨 Modern UI/UX**: Cyberpunk-inspired design with glassmorphism effects
 - **⚡ Lightning Fast**: Built with Vite for optimal performance
 - **🎭 Smooth Animations**: Powered by Framer Motion for fluid interactions
+- **🌍 Interactive 3D Globe**: Three.js powered globe showing global presence
 - **📱 Fully Responsive**: Seamless experience across all devices
 - **🌙 Dark Theme**: Eye-friendly dark mode design
 - **💼 Project Showcase**: Interactive project cards with detailed information
@@ -40,6 +41,11 @@ A modern, futuristic portfolio website showcasing my work as a Software Develope
 ### Animation
 - **Framer Motion (Motion)** - Production-ready animation library
 - **React Slick** - Carousel component
+
+### 3D Graphics
+- **Three.js** - 3D graphics library
+- **React Three Fiber** - React renderer for Three.js
+- **React Three Drei** - Useful helpers for React Three Fiber
 
 ### Additional Libraries
 - **React Hook Form** - Form management
@@ -170,6 +176,7 @@ portfolio/
 - Contact form
 - Social media links
 - Professional information
+- **Interactive 3D Globe** with location markers
 
 ## 🎯 Features in Detail
 
@@ -179,6 +186,7 @@ portfolio/
 - **Circuit Board**: Animated circuit patterns
 - **HUD Elements**: Futuristic UI overlays
 - **Terminal Effect**: Live coding simulation
+- **3D Globe**: Interactive Three.js globe with location markers
 
 ### Animations
 - Smooth page transitions

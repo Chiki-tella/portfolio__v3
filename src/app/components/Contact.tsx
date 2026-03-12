@@ -91,9 +91,10 @@ export function Contact() {
             viewport={{ once: true }}
             className="space-y-8"
           >
+            {/* Contact Information */}
             <div>
               <h3 className="text-2xl font-bold text-white mb-4">Contact Information</h3>
-              <p className="text-gray-400 mb-8">
+              <p className="text-gray-400 mb-6">
                 Feel free to reach out through any of these channels. I typically respond within 24 hours.
               </p>
             </div>

@@ -6,6 +6,7 @@ import { FloatingParticles } from './FloatingParticles';
 import { HUDElements } from './HUDElements';
 import { TerminalEffect } from './TerminalEffect';
 import { CircuitBoard } from './CircuitBoard';
+import { InteractiveGlobe } from './InteractiveGlobe';
 
 interface HeroProps {
   heroImage: string;
@@ -147,16 +148,16 @@ export function Hero({ heroImage }: HeroProps) {
             </motion.div>
           </motion.div>
 
-          {/* Right Side - Futuristic Illustration */}
+          {/* Right Side - Interactive 3D Globe */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative"
+            className="relative h-[500px] lg:h-[600px]"
           >
-            <div className="relative">
-              {/* Glowing Frame with Pulsing Effect */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl opacity-20 blur-2xl animate-pulse"></div>
+            <div className="relative h-full">
+              {/* Glowing Frame - Static (no pulsing) */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl opacity-10 blur-2xl"></div>
               
               {/* Rotating Ring Effect */}
               <motion.div
@@ -170,22 +171,15 @@ export function Hero({ heroImage }: HeroProps) {
                 className="absolute -inset-12 border-2 border-blue-500/10 rounded-full"
               />
               
-              {/* Image Container */}
-              <div className="relative bg-gradient-to-br from-cyan-500/10 to-blue-600/10 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-2 overflow-hidden">
-                <img
-                  src={heroImage}
-                  alt="Futuristic Technology"
-                  className="w-full h-auto rounded-xl object-cover"
-                />
-                
-                {/* Overlay Effect */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
+              {/* 3D Globe Container */}
+              <div className="relative h-full bg-gradient-to-br from-cyan-500/10 to-blue-600/10 backdrop-blur-sm border border-cyan-500/30 rounded-2xl overflow-hidden">
+                <InteractiveGlobe />
                 
                 {/* Holographic Corner Markers */}
-                <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-cyan-400"></div>
-                <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-cyan-400"></div>
-                <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-cyan-400"></div>
-                <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-cyan-400"></div>
+                <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-cyan-400 z-10"></div>
+                <div className="absolute top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-cyan-400 z-10"></div>
+                <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-cyan-400 z-10"></div>
+                <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-cyan-400 z-10"></div>
               </div>
 
               {/* Floating Elements */}
