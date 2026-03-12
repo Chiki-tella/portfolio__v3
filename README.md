@@ -52,6 +52,7 @@ A modern, futuristic portfolio website showcasing my work as a Software Develope
 - **Recharts** - Chart library
 - **Date-fns** - Date utility library
 - **Sonner** - Toast notifications
+- **EmailJS** - Email service for contact form
 
 ## 🚀 Getting Started
 
@@ -75,7 +76,21 @@ npm install
 pnpm install
 ```
 
-3. Start the development server
+3. **Set up environment variables**
+
+Create a `.env` file in the root directory:
+```bash
+cp .env.example .env
+```
+
+Then add your EmailJS credentials (see [EMAILJS_SETUP.md](EMAILJS_SETUP.md) for detailed instructions):
+```env
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+```
+
+4. Start the development server
 ```bash
 npm run dev
 # or
@@ -173,7 +188,9 @@ portfolio/
 - Expandable content
 
 ### Contact Section
-- Contact form
+- Contact form with EmailJS integration
+- Real-time form validation
+- Success/error notifications
 - Social media links
 - Professional information
 - **Interactive 3D Globe** with location markers
