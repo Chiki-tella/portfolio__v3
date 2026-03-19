@@ -117,9 +117,8 @@ export function Footer() {
         >
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-gray-400 flex items-center gap-1">
-              <span>© 2026 Christella Munezero Impano. Built with</span>
-              <Heart className="w-4 h-4 text-red-500 fill-red-500" />
-              <span>and React</span>
+              <span>© 2026 Christella Munezero Impano.</span>
+              
             </p>
             <div className="flex gap-6 text-sm text-gray-400">
               <button className="hover:text-cyan-400 transition-colors">Privacy Policy</button>
